@@ -316,49 +316,82 @@ body {
 .task-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 16px;
-    background: var(--bg-primary);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    margin-bottom: 12px;
+    gap: 14px;
+    padding: 18px 20px;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 14px;
+    margin-bottom: 14px;
     transition: var(--transition);
-    animation: slideIn 0.3s ease;
+    animation: slideIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    position: relative;
+}
+
+.task-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    border-radius: 14px 0 0 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.task-item:hover::before {
+    opacity: 1;
 }
 
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateX(-20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
 .task-item:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateX(5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateX(8px);
+    border-color: rgba(99, 102, 241, 0.3);
 }
 
 .task-item.completed {
-    opacity: 0.7;
-    background: #f0fdf4;
+    opacity: 0.65;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-color: #86efac;
+}
+
+.task-item.completed:hover {
+    opacity: 0.8;
 }
 
 .task-checkbox {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     accent-color: var(--secondary-color);
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.task-checkbox:hover {
+    transform: scale(1.1);
 }
 
 .task-text {
     flex: 1;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--text-primary);
     word-break: break-word;
+    line-height: 1.5;
+    font-weight: 500;
 }
 
 .task-item.completed .task-text {
@@ -368,11 +401,12 @@ body {
 
 .task-text-input {
     flex: 1;
-    padding: 8px 12px;
-    font-size: 1rem;
+    padding: 10px 14px;
+    font-size: 1.05rem;
     border: 2px solid var(--primary-color);
-    border-radius: var(--radius);
+    border-radius: 10px;
     outline: none;
+    font-weight: 500;
 }
 
 .task-actions {
@@ -381,11 +415,11 @@ body {
 }
 
 .btn-icon {
-    padding: 8px 12px;
+    padding: 8px 16px;
     background: transparent;
     border: none;
     cursor: pointer;
-    border-radius: var(--radius);
+    border-radius: 8px;
     font-size: 0.9rem;
     font-weight: 600;
     transition: var(--transition);
@@ -396,7 +430,8 @@ body {
 }
 
 .btn-edit:hover {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(99, 102, 241, 0.15);
+    transform: scale(1.05);
 }
 
 .btn-delete {
@@ -404,7 +439,8 @@ body {
 }
 
 .btn-delete:hover {
-    background: rgba(239, 68, 68, 0.1);
+    background: rgba(239, 68, 68, 0.15);
+    transform: scale(1.05);
 }
 
 .btn-save {
@@ -412,7 +448,8 @@ body {
 }
 
 .btn-save:hover {
-    background: rgba(16, 185, 129, 0.1);
+    background: rgba(16, 185, 129, 0.15);
+    transform: scale(1.05);
 }
 
 .btn-cancel {
@@ -420,7 +457,8 @@ body {
 }
 
 .btn-cancel:hover {
-    background: rgba(107, 114, 128, 0.1);
+    background: rgba(107, 114, 128, 0.15);
+    transform: scale(1.05);
 }
 
 /* ===================================
