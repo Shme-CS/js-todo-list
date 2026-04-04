@@ -2,6 +2,10 @@
 
 A modern, responsive task management application built with vanilla JavaScript, HTML5, and CSS3. This project demonstrates clean code architecture, DOM manipulation, localStorage persistence, and professional UI/UX design.
 
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow) ![HTML5](https://img.shields.io/badge/HTML-5-orange) ![CSS3](https://img.shields.io/badge/CSS-3-blue) ![LocalStorage](https://img.shields.io/badge/Storage-LocalStorage-purple)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Shme--CS-181717?logo=github)](https://github.com/Shme-CS) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin)](https://www.linkedin.com/in/shmelis-kassa-28058a305) [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail)](mailto:project1111mail@gmail.com)
+
 ## 🚀 Features
 
 - **Task Management**
@@ -174,14 +178,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## 👨‍💻 Author     
+## 👨‍💻 Author
+
+**Shmelis Kassa (Shme-CS)**
+
+- 💼 **LinkedIn:** [Shmelis Kassa](https://www.linkedin.com/in/shmelis-kassa-28058a305)
+- 📧 **Email:** project1111mail@gmail.com
+- 🐙 **GitHub:** [@Shme-CS](https://github.com/Shme-CS)
+- 🌐 **Portfolio:** [github.com/Shme-CS](https://github.com/Shme-CS)
+
+Feel free to reach out for collaborations, questions, or just to connect!
 
 Built as a portfolio project demonstrating frontend development fundamentals and JavaScript proficiency.
-
-**Contact:**
-- GitHub: [@Shme-CS](https://github.com/Shme-CS)
-- Email: project1111mail@gmail.com
-- LinkedIn: [Shmelis Kassa](https://www.linkedin.com/in/shmelis-kassa-28058a305)
 
 ## 🙏 Acknowledgments
 
@@ -192,3 +200,7 @@ Built as a portfolio project demonstrating frontend development fundamentals and
 ---
 
 **Note**: This is a client-side application. All data is stored locally in your browser. Clearing browser data will remove all tasks.
+
+**Built with ❤️ using Vanilla JavaScript**
+
+### ⭐ If you found this project helpful, please give it a star!
