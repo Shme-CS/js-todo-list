@@ -244,32 +244,62 @@ body {
    =================================== */
 .filter-section {
     display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 12px;
+    margin-bottom: 30px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .filter-btn {
-    padding: 10px 20px;
-    background: var(--bg-primary);
+    padding: 12px 28px;
+    background: white;
     border: 2px solid var(--border-color);
-    border-radius: var(--radius);
+    border-radius: 50px;
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--text-secondary);
     transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.1);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.filter-btn:hover::before {
+    width: 200px;
+    height: 200px;
 }
 
 .filter-btn:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
 }
 
 .filter-btn.active {
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: white;
-    border-color: var(--primary-color);
+    border-color: transparent;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active::before {
+    display: none;
 }
 
 /* ===================================
