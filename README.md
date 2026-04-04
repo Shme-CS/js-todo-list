@@ -66,7 +66,7 @@ js-todo-list/
 
 1. Clone or download this repository:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Shme-CS/js-todo-list>
 ```
 
 2. Navigate to the project directory:
