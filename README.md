@@ -178,6 +178,11 @@ SOFTWARE.
 
 Built as a portfolio project demonstrating frontend development fundamentals and JavaScript proficiency.
 
+**Contact:**
+- GitHub: [@Shme-CS](https://github.com/Shme-CS)
+- Email: project1111mail@gmail.com
+- LinkedIn: [Shmelis Kassa](https://www.linkedin.com/in/shmelis-kassa-28058a305)
+
 ## 🙏 Acknowledgments
 
 - Design inspiration from modern task management applications
