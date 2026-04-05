@@ -180,7 +180,7 @@ SOFTWARE.
 
 ## 👨‍💻 Author
 
-**Shmelis Kassa (Shme-CS)**
+**Shmelis Solomon (Shme-CS)**
 
 - 💼 **LinkedIn:** [Shmelis Kassa](https://www.linkedin.com/in/shmelis-kassa-28058a305)
 - 📧 **Email:** project1111mail@gmail.com
